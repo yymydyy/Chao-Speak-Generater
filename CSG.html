@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="dicription" content="一个基于base16的口胡生成器">
+        <meta name="keywords" content="口胡生成器">
+        <link rel="stylesheet" type="text/css" href="style\CSG.css">
+        <title>口胡生成器</title>
+        <link rel="shortcut icon" type="image/x-icon" href="CSG.ico" />
+        <script src="js\CSG.js"></script>
+        <script src="js\clearall.js"></script>
+        <script src="js\copy.js"></script>
+    </head>
+    
+    <body>
+        <div class="head"><!--head of the web-->
+            <h1>口胡生成器</h1>
+        </div>
+        <div class="center">
+            <textarea id="text" placeholder="请输入口胡或者文字"></textarea>
+        </div>
+        <br/>
+        <div class="center">
+            <input type="button" value="转码" onclick='encode(document.getElementById("text").value)'>
+            <input type="button" value="解码" onclick='decode(document.getElementById("text").value)'>
+            <input type="button" value="清空" onclick="clearall()">
+        </div>
+        <div class="output" id="output">
+        </div>
+        <div class="center">
+            <input id="copy" type="button" value="复制" onclick="copy()" style="display:none;">
+            <br/>
+            <p id="finish-copy" style="display: none;">已复制</p>
+        </div>
+        <div class="center">
+            <a href="https://github.com/yymydyy/Chao-Speak-Generater" target="_blank">github链接</a>
+        </div>
+    </body>
+</html>
